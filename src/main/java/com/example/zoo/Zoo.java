@@ -17,4 +17,13 @@ public class Zoo {
         this.assignments = new HashMap<>();
         this.employees = new HashSet<>();
     }
+
+    public boolean hireEmployee(Employee employee){
+        if (employee.getSalary() > funds){
+            return false;
+        }
+        employees.add(employee);
+        assignments.put(employee, new HashSet<>());
+        return true;
+    }
 }

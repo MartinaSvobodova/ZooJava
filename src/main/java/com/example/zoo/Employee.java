@@ -26,4 +26,8 @@ public class Employee {
     public void promote(int extra){
         this.salary += extra;
     }
+    
+    public int getSalary(){
+        return this.salary;
+    }
 }
